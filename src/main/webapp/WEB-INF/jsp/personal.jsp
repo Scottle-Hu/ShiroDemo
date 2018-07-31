@@ -19,53 +19,24 @@
         border: none;
     }
 
-    ul {
-        list-style: none;
-        margin-left: -40px;
-        margin-right: 0px;
-    }
-
-    ul li {
-        margin: 10px;
-        width: 150px;
-        height: 25px;
-        background-color: black;
-        color: white;
-        font-size: 15px;
-        padding: 5px;
-    }
-
-    ul li a {
-        text-decoration: none;
-        color: white;
-    }
 </style>
 <body>
 <center style="margin-top:50px;">
     <h2>shiro demo main page</h2>
     <%--shiro有jsp标签可以获取登录用户信息--%>
-    <p>Welcome:<shiro:principal/></p>
+    <p>Username:<shiro:principal/></p>
     <p>
-        The roles you have:
+        Roles:
         <c:forEach items="${roles}" var="role">
             ${role}&nbsp;
         </c:forEach>
     </p>
-    <br/>
-    <ul>
-        <li>
-            <a href="/personal">personal center</a>
-        </li>
-        <li>
-            <a href="/student">student op</a>
-        </li>
-        <li>
-            <a href="/teacher">teacher op</a>
-        </li>
-        <li>
-            <a href="/administrator">administrator op</a>
-        </li>
-    </ul>
+    <p>
+        Permissions:
+        <c:forEach items="${permissions}" var="per">
+            ${per}&nbsp;
+        </c:forEach>
+    </p>
     <br/>
     <button type="button" onclick="window.location.href='/logout'">退出</button>
 </center>

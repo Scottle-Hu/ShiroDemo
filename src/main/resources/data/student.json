@@ -1,0 +1,42 @@
+[
+  {
+    "id": "0001",
+    "name": "Alice",
+    "age": 21,
+    "gender": 0,
+    "grade": 1,
+    "major": "math"
+  },
+  {
+    "id": "0002",
+    "name": "Peter",
+    "age": 22,
+    "gender": 1,
+    "grade": 2,
+    "major": "computer science"
+  },
+  {
+    "id": "0003",
+    "name": "Scott",
+    "age": 20,
+    "gender": 1,
+    "grade": 1,
+    "major": "computer science"
+  },
+  {
+    "id": "0004",
+    "name": "Charles",
+    "age": 22,
+    "gender": 1,
+    "grade": 1,
+    "major": "information management"
+  },
+  {
+    "id": "0005",
+    "name": "Lily",
+    "age": 23,
+    "gender": 0,
+    "grade": 3,
+    "major": "information management"
+  }
+]

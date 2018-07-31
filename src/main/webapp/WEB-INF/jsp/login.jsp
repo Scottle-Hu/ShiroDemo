@@ -22,7 +22,7 @@
 <center style="margin-top:50px;">
     <h2>shiro demo login page</h2>
     <p class="error">${errMsg}</p>
-    <form action="${pageContext.request.contextPath}/check.do" method="post">
+    <form action="${pageContext.request.contextPath}/check" method="post">
         <input type="text" name="username" placeholder="username"/>
         <br/><br/>
         <input type="password" name="password" placeholder="password"/>
